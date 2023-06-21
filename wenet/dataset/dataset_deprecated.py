@@ -332,8 +332,7 @@ class CollateFunc(object):
         self.spec_sub_conf = spec_sub_conf
 
     def __call__(self, batch):
-        assert (len(batch) == 1)
-        if isinstance(batch[0], list):
+        if len(batch) == 1:
             batch = batch[0]
         if self.raw_wav:
             keys, xs, ys = _extract_feature(batch, self.speed_perturb,
