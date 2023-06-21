@@ -147,13 +147,13 @@ the future, please move to the new IO !!!
                                    sampler=train_sampler,
                                    shuffle=(train_sampler is None),
                                    pin_memory=args.pin_memory,
-                                   batch_size=1,
+                                   batch_size=dataset_conf['batch_size'],
                                    num_workers=args.num_workers)
     cv_data_loader = DataLoader(cv_dataset,
                                 collate_fn=cv_collate_func,
                                 sampler=cv_sampler,
                                 shuffle=False,
-                                batch_size=1,
+                                batch_size=dataset_conf['batch_size'],
                                 pin_memory=args.pin_memory,
                                 num_workers=args.num_workers)
 
