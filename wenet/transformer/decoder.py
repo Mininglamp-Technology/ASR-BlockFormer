@@ -1,4 +1,5 @@
 # Copyright (c) 2021 Mobvoi Inc. (authors: Binbin Zhang, Di Wu)
+#               2022 Mininglamp Com (Liuwei Wei, Xiaoming Ren)
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
